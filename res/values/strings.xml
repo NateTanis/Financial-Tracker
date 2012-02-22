@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Tracker!</string>
+    <string name="app_name">Financial Tracker</string>
+    <string name="Balance">Balance:     </string>
+    <string name="deposit">Deposit</string>
+    <string name="payment">Payment</string>
+    <string name="enter_amount">Enter an amount:</string>
+    <string name="reports">Report Center</string>
+    <string name="generate_report">Generate Reports</string>
+    <string name="myClickHandler">myClickHandler</string>
+    <string name="confirm">Confirm amount:</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_balance">New Balance: </string>
+    <string name="check_num">Check #:</string>
+    <string name="debit">Debit Card</string>
+    <string name="atm">ATM Withdrawal</string>
+    <string name="other">Other</string>
+    <string name="confirm1">Confirm</string>
+    <string name="month">November 2011</string>
+    <string name="prev">&lt;&lt;</string>
+    <string name="next">&gt;&gt;</string>
+    <string name="date">Date</string>
+    <string name="type">Type</string>
+    <string name="amount">Amount</string>
+    <string name="rpt_balance">Balance</string>
+    <string name="bal">--.--</string>
+    <string name="pending_bal">0.00</string>
+    <string name="back">back</string>
+    <string name="ReportHeader">Date     Type     Amount   Balance</string>
+
+</resources>

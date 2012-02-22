@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+	android:background="#ff000000" >
+	
+    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/absoluteLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        android:background="#ff000000" >
+
+    <TextView
+        android:id="@+id/tv_Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_x="66dp"
+        android:layout_y="14dp"
+        android:text="@string/Balance"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</AbsoluteLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:layout_y="50dp"
+        android:background="#ff444444" >
+
+        <EditText
+            android:id="@+id/ed_amount"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="54dp"
+            android:background="#ffffffff"
+            android:inputType="numberDecimal"
+            android:textColor="#ff000000" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ed_amount"
+            android:layout_alignBottom="@+id/ed_amount"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:text="@string/confirm"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_new_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_confirm"
+            android:layout_centerVertical="true"
+            android:text="@string/new_balance"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_update_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pending_bal"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_confirm"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:onClick="myClickHandler"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/btn_cancel"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv_new_bal"
+            android:onClick="myClickHandler"
+            android:text="@string/confirm1" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_x="172dp"
+        android:layout_y="12dp"
+        android:text="@string/pending_bal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </AbsoluteLayout>
+    

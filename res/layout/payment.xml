@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="16dp"
+        android:onClick="myClickHandler"
+        android:text="@string/cancel" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_cancel"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/new_balance"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp" >
+
+        <RadioButton
+            android:id="@+id/rb_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="myClickHandler"
+            android:text="@string/check_num" />
+
+        <RadioButton
+            android:id="@+id/rb_debit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="myClickHandler"
+            android:text="@string/debit" />
+
+        <RadioButton
+            android:id="@+id/rb_atm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="myClickHandler"
+            android:text="@string/atm" />
+
+        <RadioButton
+            android:id="@+id/rb_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="myClickHandler"
+            android:text="@string/other" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ed_amount"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup1"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:inputType="numberDecimal"
+        android:background="#ffffffff"
+        android:textColor="#ff000000" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ed_amount"
+        android:layout_alignParentTop="true"
+        android:text="@string/bal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_new_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_toRightOf="@+id/radioGroup1"
+        android:text="@string/pending_bal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/ed_check_num"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioGroup1"
+        android:layout_toRightOf="@+id/tv_balance"
+        android:layout_weight="1"
+        android:inputType="numberDecimal" 
+        android:background="#ffffffff"
+        android:textColor="#ff000000"/>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ed_amount"
+        android:layout_alignBottom="@+id/ed_amount"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="@string/confirm"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="28dp"
+        android:layout_toLeftOf="@+id/tv_balance"
+        android:text="@string/Balance"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_cancel"
+        android:layout_alignBottom="@+id/btn_cancel"
+        android:layout_alignRight="@+id/ed_check_num"
+        android:onClick="myClickHandler"
+        android:text="@string/confirm1" />
+
+</RelativeLayout>

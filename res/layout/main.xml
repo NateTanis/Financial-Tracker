@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <AbsoluteLayout
+        android:id="@+id/absoluteLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.89" 
+        android:background="#ff000000" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="394dp"
+            android:layout_x="0dp"
+            android:layout_y="50dp"
+            android:background="#ff444444"
+            android:onClick="myClickHandler" >
+
+            <TextView
+                android:id="@+id/txt_reports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="54dp"
+                android:text="@string/generate_report"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/btn_reports"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="myClickHandler"
+                android:text="@string/reports" />
+
+
+            <ImageButton
+                android:id="@+id/btn_deposit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btn_reports"
+                android:layout_centerVertical="true"
+                android:onClick="myClickHandler"
+                android:src="@drawable/ic_deposit" />
+
+            <ImageButton
+                android:id="@+id/btn_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/btn_reports"
+                android:layout_alignTop="@+id/btn_deposit"
+                android:onClick="myClickHandler"
+                android:src="@drawable/ic_payment" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btn_payment"
+                android:layout_alignRight="@+id/btn_payment"
+                android:layout_below="@+id/btn_payment"
+                android:gravity="center_horizontal"
+                android:text="@string/payment"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignLeft="@+id/btn_deposit"
+                android:layout_alignRight="@+id/btn_deposit"
+                android:gravity="center_horizontal"
+                android:text="@string/deposit"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/tv_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/txt_reports"
+                android:layout_marginTop="14dp"
+                android:text="@string/enter_amount"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/ed_amount"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_enter"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:inputType="numberDecimal" 
+                android:background="#ffffffff"
+                android:textColor="#ff000000" >
+
+                <requestFocus />
+            </EditText>
+
+            <ViewAnimator
+                android:id="@+id/viewAnimator1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_deposit"
+                android:layout_alignLeft="@+id/btn_deposit"
+                android:layout_alignRight="@+id/btn_deposit"
+                android:layout_alignTop="@+id/btn_deposit" >
+
+            </ViewAnimator>
+
+            <ViewAnimator
+                android:id="@+id/viewAnimator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btn_payment"
+                android:layout_alignLeft="@+id/btn_payment"
+                android:layout_alignRight="@+id/btn_payment"
+                android:layout_alignTop="@+id/btn_payment" >
+
+            </ViewAnimator>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_Balance"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_x="68dp"
+            android:layout_y="7dp"
+            android:text="@string/Balance"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_x="180dp"
+            android:layout_y="9dp"
+            android:text="@string/pending_bal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </AbsoluteLayout>
+
+</LinearLayout>
